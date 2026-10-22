@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhesta Fadilla | Futuristic AI Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Grid Cyber -->
+    <div class="cyber-bg"></div>
+
+    <!-- Navigasi Utama -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fas fa-microchip"></i> DHESTA<span>.AI</span></div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="goToSlide(0)" class="nav-item active">Beranda</a></li>
+                <li><a href="#" onclick="goToSlide(1)" class="nav-item">Identitas</a></li>
+                <li><a href="#" onclick="goToSlide(2)" class="nav-item">AI Essentials</a></li>
+                <li><a href="#" onclick="goToSlide(3)" class="nav-item">Cabang AI</a></li>
+                <li><a href="#" onclick="goToSlide(4)" class="nav-item">Masa Depan AI</a></li>
+                <li><a href="#" onclick="goToSlide(5)" class="nav-item">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider Container Utama -->
+    <main class="slider-container">
+
+        <!-- SLIDE 1: Hero / Beranda -->
+        <section class="slide active">
+            <div class="glass-card hero-card">
+                <div class="badge">Eksplorasi Masa Depan</div>
+                <h1>DHESTA FADILLA</h1>
+                <p class="subtitle">Next-Gen Tech Enthusiast & Artificial Intelligence Explorer</p>
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="nextSlide()">Jelajahi Slide <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Identitas Diri -->
+        <section class="slide">
+            <div class="glass-card">
+                <h2 class="title-glow"><i class="fas fa-user-astronaut"></i> Identitas Digital</h2>
+                <div class="profile-grid">
+                    <div class="profile-item">
+                        <i class="fas fa-id-card icon-neon"></i>
+                        <h4>Nama Lengkap</h4>
+                        <p>Dhesta Fadilla</p>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fas fa-birthday-cake icon-neon"></i>
+                        <h4>Usia & Kelas</h4>
+                        <p>16 Tahun / Kelas 11 (2) SMK</p>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fas fa-school icon-neon"></i>
+                        <h4>Institusi Pendidikan</h4>
+                        <p>SMK Negeri 1 Kolaka</p>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fas fa-map-marker-alt icon-neon"></i>
+                        <h4>Lokasi / Alamat</h4>
+                        <p>Jl. Pramuka, Kolaka</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Pengenalan AI & Inovasi -->
+        <section class="slide">
+            <div class="glass-card">
+                <h2 class="title-glow"><i class="fas fa-brain"></i> Apa Itu Artificial Intelligence?</h2>
+                <div class="content-box">
+                    <p>Kecerdasan Buatan (Artificial Intelligence) adalah simulasi dari kecerdasan manusia yang dimodelkan di dalam mesin dan diprogram agar bisa berpikir, belajar, dan memecahkan masalah layaknya manusia.</p>
+                    <div class="features-grid">
+                        <div class="feat-card">
+                            <i class="fas fa-robot"></i>
+                            <h3>Otomatisasi Cerdas</h3>
+                            <p>Proses kompleks dapat berjalan secara mandiri dengan tingkat presisi tinggi.</p>
+                        </div>
+                        <div class="feat-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Analisis Prediktif</h3>
+                            <p>AI mampu membaca data masif untuk memprediksi tren masa depan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Cabang Teknologi AI -->
+        <section class="slide">
+            <div class="glass-card">
+                <h2 class="title-glow"><i class="fas fa-network-wired"></i> Pilar & Cabang Utama AI</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Machine Learning (ML)</h3>
+                        <p>Sistem yang belajar dari data untuk meningkatkan performa tanpa perlu diprogram secara eksplisit.</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-wave-square"></i>
+                        <h3>Deep Learning & Neural Networks</h3>
+                        <p>Model yang meniru struktur otak manusia untuk mengenali pola suara, gambar, dan teks secara kompleks.</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-comments"></i>
+                        <h3>Generative AI & NLP</h3>
+                        <p>Pemrosesan bahasa alami yang memungkinkan mesin memahami manusia serta membuat konten teks, gambar, dan musik baru.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Dampak & Masa Depan AI -->
+        <section class="slide">
+            <div class="glass-card">
+                <h2 class="title-glow"><i class="fas fa-rocket"></i> Masa Depan AI di Berbagai Sektor</h2>
+                <div class="content-box">
+                    <div class="future-cards">
+                        <div class="f-card">
+                            <h4><i class="fas fa-stethoscope"></i> Kesehatan</h4>
+                            <p>Diagnosis penyakit lebih cepat melalui analisis citra medis dan penemuan obat baru berbasis komputasi AI.</p>
+                        </div>
+                        <div class="f-card">
+                            <h4><i class="fas fa-graduation-cap"></i> Pendidikan</h4>
+                            <p>Pembelajaran terpersonalisasi yang menyesuaikan ritme dan kebutuhan setiap siswa secara otomatis.</p>
+                        </div>
+                        <div class="f-card">
+                            <h4><i class="fas fa-car-side"></i> Transportasi</h4>
+                            <p>Pengembangan kendaraan otonom (tanpa pengemudi) dan sistem navigasi lalu lintas cerdas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Kontak & Kolaborasi -->
+        <section class="slide">
+            <div class="glass-card">
+                <h2 class="title-glow"><i class="fas fa-paper-plane"></i> Mari Berkolaborasi</h2>
+                <p class="contact-desc">Saya siap belajar, berdiskusi, dan membangun inovasi teknologi masa depan bersama kamu.</p>
+                <div class="info-list">
+                    <p><i class="fas fa-envelope"></i> dhestafadilla@smkn1kolaka.sch.id</p>
+                    <p><i class="fas fa-map-marked-alt"></i> SMKN 1 Kolaka • Jl. Pramuka</p>
+                </div>
+                <a href="mailto:dhestafadilla@smkn1kolaka.sch.id" class="btn btn-primary">Kirim Pesan Futuristik</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Kontrol Slide (Navigasi Bawah) -->
+    <div class="slide-controls">
+        <button onclick="prevSlide()" class="ctrl-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slide-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+            <span class="dot" onclick="goToSlide(5)"></span>
+        </div>
+        <button onclick="nextSlide()" class="ctrl-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
